@@ -18,3 +18,4 @@
     become_user: root
   - name: to deploy docker image 
     command: docker run -itd -p 8090:8090 sarthakwaghpatil/finance-project:1.0
+    
