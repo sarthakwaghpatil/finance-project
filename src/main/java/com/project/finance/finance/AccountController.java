@@ -50,4 +50,6 @@ public class AccountController {
 	public List<Account> viewAll() {
 		return accountService.viewAll();
 	}
+	
+	
 }

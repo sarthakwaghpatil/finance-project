@@ -1,37 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="ISO-8859-1">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Font Awesome 5 CDN link to add icones -->
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <title>Sign Up</title>
-    <!-- Linking .css file with HTML page -->
-    <link rel="stylesheet" href="style1.css">
+<meta charset="ISO-8859-1">
+<title>sign up</title>
 </head>
 <body>
     <div>
         <!-- Left section of signup form -->
         <dive>
-            <h1>Sign Up</h1>
-            <h5>Welcome to our Finance-me bank</h5>
-            <form action="" method="get">
-             <div>
-                <p><label for="userNmae">User Name</label></p>
-                <input type="text" id="userName" autocomplete="off" >
-             </div>
-             <div>
-                <p><label for="email">Email Address</label></p>
-                <input type="email" id="email" name="email" required autocomplete="off">
-             </div>
-             <div>
-                <p><label for="password">Password</label></p>
-                <input type="password" id="password" required >
-             </div>
-             <button type="button" id="btn">Sign Up Now</button>
-             <p>Already have an acoount? <a href="login.html">Log in</a></p>
-            </form>
+            <h1>Welcome to our Finance-me bank</h1>
+             <form action="createAccount">
+             
+                 <p><label>Account Number</label></p><input type="int" name="accountNumber" id="aN" placeholder="accountNumber"required><br>
+                 
+                 <p><label>Account Holoder Name</label></p><input type="text" id="aHN" name="accountHolderNamee" placeholder="accountHolderName"required><br>
+                 
+                 <p><label>Account Type</label></p><input type="text" id="aT" placeholder="accountType" name="accountType"required><br>
+                 
+                 <p><label>Account Branch</label></p><input type="text" id="aB" placeholder="accountBranch" name="accountBranch"required><br>
+                 
+                 <p><label>Account Balance</label></p><input type="text" id="ab" placeholder="accountBalance" name="accountBalance"required><br>
+                 
+                 
+                 <p><input type="submit" class="button"><br>
+             </form>
+             <p>to create Account click on <a href="createAccount">createAccount</a>
     </div>
 </body>
 </html>
