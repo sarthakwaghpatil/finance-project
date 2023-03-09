@@ -36,11 +36,11 @@ node{
         echo "containerizing the application"
         sh "sudo ${dockerCMD} build -t sarthakwaghpatil/finance-project:${tagName} ."
     }
-        stage('pushing image to dockerhub'){
+    stage('pushing image to dockerhub'){
         echo "pushing the image to dockerhub"
         withCredentials([string(credentialsId: 'docker-password', variable: 'dockerhubpassword')]) {
-            sh "sudo ${dockerCMD} login -u sarthakwaghpatil -p ${dockerhubpassword}"
-            sh "sudo ${dockerCMD} push sarthakwaghpatil/finance-project:${tagName}"
+        sh "sudo ${dockerCMD} login -u sarthakwaghpatil -p ${dockerhubpassword}"
+        sh "sudo ${dockerCMD} push sarthakwaghpatil/finance-project:${tagName}"
         }
     }
     stage('configure and deploy to test server'){
